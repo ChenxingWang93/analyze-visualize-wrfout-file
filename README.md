@@ -19,8 +19,14 @@
 NetCDF 文件用于 存储 多维科学数据与相关元数据
 
 ### 📌brief description of your result and impact 简要描述 结果以及 影响
+
 <img width="1500" alt="Screen Shot 2023-05-14 at 20 36 38" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/cf5a5533-8816-4c51-b8f6-b76300bd12f0">[收起形式]
 
 <img width="1500" alt="Screen Shot 2023-05-14 at 21 17 47" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/c387e68f-4b51-4dc9-bc6f-07075cecdc41">[展开形式]
+
+<img width="100" alt="Screen Shot 2023-05-14 at 21 58 33" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/edfa63ff-90f6-43dc-b51c-efd9445599c4">
+
+**数据类型Data Type** 中主要有两种 `Geo2D` &`1D` 
+
 
 #### 
