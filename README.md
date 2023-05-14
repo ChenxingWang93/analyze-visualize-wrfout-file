@@ -12,6 +12,13 @@
 
 `wrfout`文件通常以 名为 **网络通用数据表NetCDF (Network Common Data Form)** 的形式存在
 
+也是一系列 **软件库** 与 **自描述的**，**机器独立的** 数据形式
+
+用于 **创建**，**访问** 与**共享** **面向数组的科学数据array-oriented scientific data**
+
+NetCDF 文件用于 存储 多维科学数据与相关元数据
 
 ### 📌brief description of your result and impact 简要描述 结果以及 影响
 <img width="1500" alt="Screen Shot 2023-05-14 at 20 36 38" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/cf5a5533-8816-4c51-b8f6-b76300bd12f0">
+
+#### 
