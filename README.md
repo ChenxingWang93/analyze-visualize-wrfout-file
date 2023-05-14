@@ -28,5 +28,16 @@ NetCDF 文件用于 存储 多维科学数据与相关元数据
 
 **数据类型Data Type** 中主要有两种 `Geo2D` &`1D` 
 
+以其中一个`Geo2D`为例
+e.g. Variable "ACGRDFLX"
+```
+float ACGRDFLX(Time=1, south_north=250, west_east=310);
+  :FieldType = 104; // int
+  :MemoryOrder = "XY ";
+  :description = "ACCUMULATED GROUND HEAT FLUX";
+  :units = "J m-2";
+  :stagger = "";
+  :coordinates = "XLONG XLAT XTIME";
+```
 
 #### 
