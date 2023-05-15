@@ -28,7 +28,7 @@ NetCDF 文件用于 存储 多维科学数据与相关元数据
 
 **数据类型Data Type** 中主要有两种 `Geo2D` &`1D` 
 
-以其中一个`Geo2D`为例
+### 📌以其中一个`Geo2D`为例
 e.g. Variable "ACGRDFLX"
 ```
 float ACGRDFLX(Time=1, south_north=250, west_east=310);
@@ -39,5 +39,21 @@ float ACGRDFLX(Time=1, south_north=250, west_east=310);
   :stagger = "";
   :coordinates = "XLONG XLAT XTIME";
 ```
+上述 code snippets 定义了一个名为 `ACGRDFLX` 的浮点类型变量
 
-#### 
+-
+```
+1. 第1行
+float ACGRDFLX(Time=1, south_north=250, west_east=310);
+```
+包含 `Time`、`south_north`、& `west_east` 的三维数据，数值分别为1，250，&310
+
+-
+```
+2.第2行
+  :FieldType = 104; // int
+```
+变量`ACGRDFLX` 的属性，声明了该变量的域类型field type 为 `104`
+
+
+
