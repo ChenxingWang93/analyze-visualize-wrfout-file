@@ -54,7 +54,9 @@ float ACGRDFLX(Time=1, south_north=250, west_east=310);
   :FieldType = 104; // int
 ```
 变量`ACGRDFLX` 的属性，声明了该变量的域类型field type 为 `104`
+
 类似代码对应的 特定数据类型
+
 （但是❗这些代码片段是 跨数据集 **非标准化** 的，会在 别处文件和文件夹 以不同的方式被定义）
 
 - ③
