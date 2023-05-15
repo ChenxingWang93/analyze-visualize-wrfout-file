@@ -64,4 +64,46 @@ float ACGRDFLX(Time=1, south_north=250, west_east=310);
 /*第3行*/
   :MemoryOrder = "XY ";
 ```
+此行代码代表数据是以 `X`(west_east), `Y`(south_north). 顺序存储在内存中
 
+`XY `后的` ` 意味着 没有特定的 内存顺序 给到 **时间** 这个维度
+
+- ④
+```
+/*第4行*/
+  :description = "ACCUMULATED GROUND HEAT FLUX";
+```
+这行提供的是 一个人类可读的 对变量`ACGRDFLX`代表什么的描述 是 **累积地表热度流通量**
+
+- ⑤
+```
+/*第5行*/
+  :units = "J m-2";
+```
+描述变量值的单位 也就是焦耳/平方米
+
+
+- ⑥
+```
+/*第6行*/
+  :stagger = "";
+```
+
+在 **数值天气预测**  与 **气候模型** 中常用的 交错网格
+
+一个 `空的` 对交错属性的描述 通常意味着这个变量 并非是交错的
+
+
+- ⑦
+```
+/*第7行*/
+  :coordinates = "XLONG XLAT XTIME";
+```
+
+坐标系变量提供变量 `ACGRDFLX` 实际的 **纬度**，**经度** 与 **时间值** 指标维度 
+
+`XLONG` 对应 `west_east`
+
+`XLAT` 对应 `south_north` 
+
+`XTIME` 对应 `Time`
