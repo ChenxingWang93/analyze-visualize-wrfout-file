@@ -41,19 +41,25 @@ float ACGRDFLX(Time=1, south_north=250, west_east=310);
 ```
 上述 code snippets 定义了一个名为 `ACGRDFLX` 的浮点类型变量
 
--
+- ①
 ```
-1. 第1行
+/*第1行*/
 float ACGRDFLX(Time=1, south_north=250, west_east=310);
 ```
 包含 `Time`、`south_north`、& `west_east` 的三维数据，数值分别为1，250，&310
 
--
+- ②
 ```
-2.第2行
+/*第2行*/
   :FieldType = 104; // int
 ```
 变量`ACGRDFLX` 的属性，声明了该变量的域类型field type 为 `104`
+类似代码对应的 特定数据类型
+（但是❗这些代码片段是 跨数据集 **非标准化** 的，会在 别处文件和文件夹 以不同的方式被定义）
 
-
+- ③
+```
+/*第3行*/
+  :MemoryOrder = "XY ";
+```
 
