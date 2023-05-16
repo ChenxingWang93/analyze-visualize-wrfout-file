@@ -131,6 +131,11 @@ int BATHYMETRY_FLAG(Time=1);
 /*第1行*/
 int BATHYMETRY_FLAG(Time=1);
 ```
+定义了一个 integer 类型的变量 `BATHYMETRY_FLAG` 单一 `Time` 维度，值设定为1.
+
+其他行为 变量 设定 元数据，例如 `FieldType`，`MemoryOrder`，`description`，`units`，`staggering`
+
+如果你要创建一个 netCDF文件，以下是一个使用 带 `netCDF4` 模块的 Python 例子
 
 ``` python
 from netCDF4 import Dataset
@@ -152,11 +157,3 @@ bathymetry_flag.stagger = ""
 
 rootgrp.close()
 ```
-
-
-
-
-
-
-
-
