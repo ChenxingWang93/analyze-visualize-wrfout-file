@@ -168,4 +168,32 @@ float C1F(Time=1, bottom_top_stag=72);
   :units = "Dimensionless";
   :stagger = "Z";
 ```
-只是把
+只是把变量名 换成了 `C1F` 
+
+类型为 浮点数 
+
+netCDF 类型的格式，但不是直接执行的代码
+
+更像是一个变量的 specification 或者 metadata 
+
+``` python
+from netCDF4 import Dataset
+
+rootgrp = Dataset("test.nc", "w", format="NETCDF4")
+
+# Define dimensions
+time = rootgrp.createDimension("Time", 1)
+bottom_top_stag = rootgrp.createDimension("bottom_top_stag", 72)
+
+# Define C1F variable 
+C1F = rootgrp.createVariable("C1F","f4",("Time","bottom_top_stag",))
+
+# Set attributes
+C1F.FieldType = 104
+C1F.MemoryOrder = "Z  "
+C1F.description = "full levels, c1f = d bf / d eta, using znu"
+C1F.units = "Dimensionless"
+C1F.stagger = "Z"
+
+rootgrp.close()
+```
