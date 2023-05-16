@@ -159,3 +159,13 @@ rootgrp.close()
 ```
 
 ### 📌以其中一个 `1D` 为例
+
+```
+float C1F(Time=1, bottom_top_stag=72);
+  :FieldType = 104; // int
+  :MemoryOrder = "Z  ";
+  :description = "full levels, c1f = d bf / d eta, using znu";
+  :units = "Dimensionless";
+  :stagger = "Z";
+```
+只是把
