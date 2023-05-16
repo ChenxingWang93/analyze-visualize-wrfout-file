@@ -109,7 +109,20 @@ float ACGRDFLX(Time=1, south_north=250, west_east=310);
 `XTIME` 对应 `Time`
 
 ```
+int BATHYMETRY_FLAG(Time=1);
+  :FieldType = 106; // int
+  :MemoryOrder = "0  ";
+  :description = "Flag for bathymetry in the global attributes for metgrid data";
+  :units = "-";
+  :stagger = "";
 ```
+以上 code snippet 以 NCL(NCAR Command Language), 编写 用于大气与海洋学的 **数据处理** 与 **可视化** 
+
+代码描述了 函数 或者 变量
+
+但 code format 上有一些 混乱
+
+既不是 NCL 也不是其他 common language 的代码风格
 
 ```
 ```
