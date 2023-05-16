@@ -108,6 +108,8 @@ float ACGRDFLX(Time=1, south_north=250, west_east=310);
 
 `XTIME` 对应 `Time`
 
+📌以其中一个 `-` 为例
+
 ```
 int BATHYMETRY_FLAG(Time=1);
   :FieldType = 106; // int
@@ -124,8 +126,36 @@ int BATHYMETRY_FLAG(Time=1);
 
 既不是 NCL 也不是其他 common language 的代码风格
 
+- ① 
 ```
+/*第1行*/
+int BATHYMETRY_FLAG(Time=1);
 ```
+
+``` python
+from netCDF4 import Dataset
+
+rootgrp = Dataset("test.nc", "w", format="NETCDF4")
+
+# Define Time dimension
+time = rootgrp.createDimension("Time", 1)
+
+# Define BATHYMETRY_FLAG variable
+bathymetry_flag = rootgrp.createVariable("BATHYMETRY_FLAG","i4"("Time",))
+
+# Set attributes
+bathymetry_flag.FieldType = 106
+bathymetry_flag.MemoryOrder = "0  "
+bathymetry_flag.description = "Flag for bathymetry in the global attributes for metgrid data"
+bathymetry_flag.units = "-"
+bathymetry_flag.stagger = ""
+
+rootgrp.close()
+```
+
+
+
+
 
 
 
