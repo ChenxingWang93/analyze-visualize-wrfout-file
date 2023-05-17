@@ -198,6 +198,11 @@ C1F.stagger = "Z"
 rootgrp.close()
 ```
 ## Main 🍚实验方法与步骤
-
+### 1.File Conversion文件📃转换： 
+### 2.Web Framework框架选择：
+### 3.Data Extraction数据提取：
+### 4.Data Processing数据处理：
+### 5.Visualization可视化：
+### 6.
 
 ## Result 🎬结果
