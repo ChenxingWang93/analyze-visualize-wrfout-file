@@ -207,8 +207,10 @@ rootgrp.close()
 - [Cesium](https://github.com/CesiumGS/cesium): 基于WebGL 的 JavaScript 库 渲染 3D 全球与地图🗺️ 🔗  [CesiumGS](https://cesium.com/platform/cesiumjs/)
 - [D3.js](https://github.com/d3/d3): 动态交互式数据可视化 🔗  [d3js](https://d3js.org/)
 
+
 ### 3.Data Extraction数据提取：
 读取 `NetCDF` 文件 访问特定 变量variables e.g.水气vapor
+
 
 ### 4.Data Processing数据处理：
 处理 提取出的数据
@@ -217,18 +219,22 @@ rootgrp.close()
 
 拟合数值或者执行数值计算 interpolating values, or performing statistical calculations
 
+
 ### 5.Visualization可视化：
 在地图上基于时间序列绘制数据 plot the data on a map, generate time series plots
+
 
 ### 6.Web integration植入：
 嵌入 HTML 结构
 
 CSS 风格化
 
+
 ### 7.Hosting托管：
 部署到网络服务器或者托管平台
 
 确保必要的依赖(JavaScript libraries) wrfout 文件能够通过网页应用程序被访问
+
 
 ### 8.Testing测试：
 保证兼容性 
@@ -236,5 +242,6 @@ CSS 风格化
 跨浏览器
 
 跨设备
+
 
 ## Result 🎬结果
