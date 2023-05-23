@@ -258,6 +258,13 @@ data = {
 # convert to JSON string
 json_data = json.dumps(data)
 ```
+`tolist()` method is used to convert the NumPy array data to a native Python list 
+
+### 3.X.Write JSON to file: 保存JSON 数据到文件
+``` Python
+with open('/path/to/output.json', 'w') as outfile:
+    outfile.write(json_data)
+```
 
 ## 4.Data Processing 数据处理：
 处理 提取出的数据
