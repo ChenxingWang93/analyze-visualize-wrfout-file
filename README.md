@@ -221,33 +221,36 @@ rootgrp.close()
 
 
 ### 3.Data Extraction 数据提取：
+#### prerequisite: Python installed on system
 读取 `NetCDF` 文件 访问特定 变量variables e.g.水气vapor
-#### 1.install the required libraries 
+#### 3.X.install the required libraries 
 ``` shell
 pip install netCDF4 xarray
 ```
 
-#### 2.导入必要模块 
-``` python
+#### 3.X.导入必要模块 
+``` Python
 import xarray as xr
 import json
 ```
 
-#### 3.使用 `xarray` 打开 `wrfout` 文件 
+#### 3.X.使用 `xarray` 打开 `wrfout` 文件 
 ```
 file_path = 'path_to_your_file/wrfout.nc'  #用真实路径替代
 wrf_data = xr.open_dataset(file_path)
 ```
 
-#### 4.提取想要转化为 `JSON` 的变量
+#### 3.X.提取想要转化为 `JSON` 的变量
 ```
 variables = ['variableName1', 'variableName2', 'variableName3']  #Water vapor mixing ratio, U-component of wind, V-component of wind
 data = wrf_data[variables].to_dict()
 ```
-提取的变量名
+提取转化为JSON的变量名
 
-#### 5.
-```
+#### 3.X.create JSON Object: 转化提取出的数据为JSON 对象 or 数据结构
+以nested dictionary 或者 a list of dictionaries 表示
+``` Python
+# create JSON object
 
 ```
 
