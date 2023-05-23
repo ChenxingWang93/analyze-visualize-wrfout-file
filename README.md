@@ -225,6 +225,9 @@ rootgrp.close()
 ~~删除的文字内容~~
 
 ~~### 3.X.已通过非CLI安装Homebrew的可以忽略~~
+
+<img width="250" alt="40e59cb5819ae2c80a44023d8235be1" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/8ce2ae27-f684-4af3-8541-75188da1c9aa">
+
 ### 3.X. use homebrew to install `pip` run following command in terminal
 ``` bash
 brew install python
@@ -237,6 +240,7 @@ pip --version
 ``` bash
 pip install netCDF4
 ```
+<img width="250" alt="0b6d1299bb04f902bf4d63085179b50" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/be90c9f1-5686-44a7-b0b2-d23a7bf58337">
 
 ### 2023-05-22 更新
 ### prerequisite: Python installed on system
@@ -282,6 +286,10 @@ json_data = json.dumps(data)
 ``` Python
 with open('/path/to/output.json', 'w') as outfile:
     outfile.write(json_data)
+```
+### 3.X.for 
+``` Python
+
 ```
 
 ## 4.Data Processing 数据处理：
