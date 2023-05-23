@@ -274,22 +274,18 @@ with open('/path/to/output.json', 'w') as outfile:
 
 拟合数值或者执行数值计算 interpolating values, or performing statistical calculations
 
-
 ## 5.Visualization 可视化：
 在地图上基于时间序列绘制数据 plot the data on a map, generate time series plots
-
 
 ## 6.Web integration 植入：
 嵌入 HTML 结构
 
 CSS 风格化
 
-
-### 7.Hosting 托管：
+## 7.Hosting 托管：
 部署到网络服务器或者托管平台
 
 确保必要的依赖(JavaScript libraries) wrfout 文件能够通过网页应用程序被访问
-
 
 ## 8.Testing 测试：
 保证兼容性 
@@ -297,6 +293,5 @@ CSS 风格化
 跨浏览器
 
 跨设备
-
 
 # Result 🎬 结果
