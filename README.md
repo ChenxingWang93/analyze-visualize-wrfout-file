@@ -226,7 +226,7 @@ rootgrp.close()
 
 ~~### 3.X.已通过非CLI安装Homebrew的可以忽略~~
 
-<img width="250" alt="40e59cb5819ae2c80a44023d8235be1" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/8ce2ae27-f684-4af3-8541-75188da1c9aa">
+~~<img width="250" alt="40e59cb5819ae2c80a44023d8235be1" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/8ce2ae27-f684-4af3-8541-75188da1c9aa">~~
 
 ### 3.X. use homebrew to install `pip` run following command in terminal
 ``` bash
@@ -236,7 +236,7 @@ brew install python
 ``` bash
 pip --version
 ```
-### 3.X.
+### 3.X. 下载并安装 `netCDF4` 库library与其依赖dependencies
 ``` bash
 pip install netCDF4
 ```
