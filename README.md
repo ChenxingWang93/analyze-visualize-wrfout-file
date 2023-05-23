@@ -222,7 +222,13 @@ rootgrp.close()
 
 ## 3.Data Extraction 数据提取：
 ### 2023-05-23 更新
+~~删除的文字内容~~
 
+~~### 3.X.已通过非CLI安装Homebrew的可以忽略~~
+### 3.X. use homebrew to install `pip` run following command in terminal
+``` bash
+brew install python
+```
 
 
 ### 2023-05-22 更新
@@ -247,7 +253,7 @@ wrf_data = xr.open_dataset(file_path)
 
 ### 3.X.提取想要转化为 `JSON` 的变量
 ``` Python
-variables = ['variableName1', 'variableName2', 'variableName3']  #Water vapor mixing ratio, U-component of wind, V-component of wind
+variables = ['variableName1', 'variableName2', 'variableName3'] #Water vapor mixing ratio, U-component of wind, V-component of wind
 data = wrf_data[variables].to_dict()
 ```
 提取转化为JSON的变量名
