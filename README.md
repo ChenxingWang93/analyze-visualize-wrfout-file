@@ -251,7 +251,12 @@ data = wrf_data[variables].to_dict()
 以nested dictionary 或者 a list of dictionaries 表示
 ``` Python
 # create JSON object
-
+data = {
+    'temperature': temperature.tolist(),
+    'latitude': latitude.tolist()
+}
+# convert to JSON string
+json_data = json.dumps(data)
 ```
 
 ## 4.Data Processing 数据处理：
