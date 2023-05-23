@@ -229,7 +229,14 @@ rootgrp.close()
 ``` bash
 brew install python
 ```
-
+### 3.X. verifying `pip` is working correctly by running the following command:
+``` bash
+pip --version
+```
+### 3.X.
+``` bash
+pip install netCDF4
+```
 
 ### 2023-05-22 更新
 ### prerequisite: Python installed on system
