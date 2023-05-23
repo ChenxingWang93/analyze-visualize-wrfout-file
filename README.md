@@ -197,11 +197,11 @@ C1F.stagger = "Z"
 
 rootgrp.close()
 ```
-## Main 🍚实验方法与步骤
-### 1.File Conversion文件📃转换：
+# Main 🍚实验方法与步骤
+## 1.File Conversion文件📃转换：
 转化为通用格式 **网络通用数据表NetCDF (Network Common Data Form)** 
 
-### 2.Web Framework 框架选择：
+## 2.Web Framework 框架选择：
 - [Leaflet](https://github.com/Leaflet/Leaflet): 一个 JavaScript 库的交互式地图🗺️  🔗  [leafletjs](https://leafletjs.com/)
 - [OpenLayers](https://github.com/openlayers/openlayers): 另一个 JavaScript 库用来展示地图🗺️与地理空间数据  🔗  [openlayers](https://openlayers.org/)
 - [Cesium](https://github.com/CesiumGS/cesium): 基于WebGL 的 JavaScript 库 渲染 3D 全球与地图🗺️ 🔗  [CesiumGS](https://cesium.com/platform/cesiumjs/)
@@ -220,41 +220,41 @@ rootgrp.close()
 - [D3.js](https://github.com/d3/d3): 动态交互式数据可视化 🔗  [d3js](https://d3js.org/)
 
 
-### 3.Data Extraction 数据提取：
-#### prerequisite: Python installed on system
+## 3.Data Extraction 数据提取：
+### prerequisite: Python installed on system
 读取 `NetCDF` 文件 访问特定 变量variables e.g.水气vapor
-#### 3.X.install the required libraries 
+### 3.X.install the required libraries 
 ``` shell
 pip install netCDF4 xarray
 ```
 
-#### 3.X.导入必要模块 
+### 3.X.导入必要模块 
 ``` Python
 import xarray as xr
 import json
 ```
 
-#### 3.X.使用 `xarray` 打开 `wrfout` 文件 
-```
+### 3.X.使用 `xarray` 打开 `wrfout` 文件 
+``` Python
 file_path = 'path_to_your_file/wrfout.nc'  #用真实路径替代
 wrf_data = xr.open_dataset(file_path)
 ```
 
-#### 3.X.提取想要转化为 `JSON` 的变量
-```
+### 3.X.提取想要转化为 `JSON` 的变量
+``` Python
 variables = ['variableName1', 'variableName2', 'variableName3']  #Water vapor mixing ratio, U-component of wind, V-component of wind
 data = wrf_data[variables].to_dict()
 ```
 提取转化为JSON的变量名
 
-#### 3.X.create JSON Object: 转化提取出的数据为JSON 对象 or 数据结构
+### 3.X.create JSON Object: 转化提取出的数据为JSON 对象 or 数据结构
 以nested dictionary 或者 a list of dictionaries 表示
 ``` Python
 # create JSON object
 
 ```
 
-### 4.Data Processing 数据处理：
+## 4.Data Processing 数据处理：
 处理 提取出的数据
 
 包含随着时间推移的聚合数据 aggregating data over time
@@ -262,11 +262,11 @@ data = wrf_data[variables].to_dict()
 拟合数值或者执行数值计算 interpolating values, or performing statistical calculations
 
 
-### 5.Visualization 可视化：
+## 5.Visualization 可视化：
 在地图上基于时间序列绘制数据 plot the data on a map, generate time series plots
 
 
-### 6.Web integration 植入：
+## 6.Web integration 植入：
 嵌入 HTML 结构
 
 CSS 风格化
@@ -278,7 +278,7 @@ CSS 风格化
 确保必要的依赖(JavaScript libraries) wrfout 文件能够通过网页应用程序被访问
 
 
-### 8.Testing 测试：
+## 8.Testing 测试：
 保证兼容性 
 
 跨浏览器
@@ -286,4 +286,4 @@ CSS 风格化
 跨设备
 
 
-## Result 🎬 结果
+# Result 🎬 结果
