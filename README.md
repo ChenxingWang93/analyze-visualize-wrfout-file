@@ -311,6 +311,8 @@ dataVapor = data[:].tolist()
 
 # using `json.dumps()` to convert it to a JSON-formatted string, \\使用 `json.dumps()` 把这个list转成一个 JSON格式的 string
 json_data = json.dumps(dataVapor)
+
+print(json_data)
 ```
 <img width="750" alt="Screen Shot 2023-05-25 at 11 44 52" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/c4aa7554-f673-4f6b-837d-acdd60d49a7b">
 
