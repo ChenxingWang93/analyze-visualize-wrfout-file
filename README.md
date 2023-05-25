@@ -243,34 +243,36 @@ pip install netCDF4
 <img width="250" alt="0b6d1299bb04f902bf4d63085179b50" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/be90c9f1-5686-44a7-b0b2-d23a7bf58337">
 
 ### 2023-05-22 更新
-### prerequisite: Python installed on system
-读取 `NetCDF` 文件 访问特定 变量variables e.g.水气vapor
-### 3.X.install the required libraries
+~~### prerequisite: Python installed on system~~
+
+~~读取 `NetCDF` 文件 访问特定 变量variables e.g.水气vapor~~
+
+~~### 3.X.install the required libraries~~
 ``` shell
 pip install netCDF4 xarray
 ```
 
-### 3.X.导入必要模块 
+~~### 3.X.导入必要模块~~
 ``` Python
 import xarray as xr
 import json
 ```
 
-### 3.X.使用 `xarray` 打开 `wrfout` 文件 
+~~### 3.X.使用 `xarray` 打开 `wrfout` 文件~~
 ``` Python
 file_path = 'path_to_your_file/wrfout.nc'  #用真实路径替代
 wrf_data = xr.open_dataset(file_path)
 ```
 
-### 3.X.提取想要转化为 `JSON` 的变量
+~~### 3.X.提取想要转化为 `JSON` 的变量~~
 ``` Python
 variables = ['variableName1', 'variableName2', 'variableName3'] #Water vapor mixing ratio, U-component of wind, V-component of wind
 data = wrf_data[variables].to_dict()
 ```
-提取转化为JSON的变量名
+~~提取转化为JSON的变量名~~
 
-### 3.X.create JSON Object: 转化提取出的数据为JSON 对象 or 数据结构
-以nested dictionary 或者 a list of dictionaries 表示
+~~### 3.X.create JSON Object: 转化提取出的数据为JSON 对象 or 数据结构
+以nested dictionary 或者 a list of dictionaries 表示~~
 ``` Python
 # create JSON object
 data = {
@@ -280,17 +282,19 @@ data = {
 # convert to JSON string
 json_data = json.dumps(data)
 ```
-`tolist()` method is used to convert the NumPy array data to a native Python list 
+~~`tolist()` method is used to convert the NumPy array data to a native Python list~~
 
-### 3.X.Write JSON to file: 保存JSON 数据到文件
+~~### 3.X.Write JSON to file: 保存JSON 数据到文件~~
 ``` Python
 with open('/path/to/output.json', 'w') as outfile:
     outfile.write(json_data)
 ```
-### 3.X.for 
-``` Python
 
+~~### 3.X.for~~
+``` Python
 ```
+
+
 
 ## 4.Data Processing 数据处理：
 处理 提取出的数据
