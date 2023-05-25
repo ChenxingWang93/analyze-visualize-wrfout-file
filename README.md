@@ -294,7 +294,25 @@ with open('/path/to/output.json', 'w') as outfile:
 ``` Python
 ```
 
+### 2023-05-24 更新
+``` Python
+import netCDF4 as nc
+import json
 
+file_path = 'path_to_your_file.nc'
+
+nc_file = nc.Dataset(file_path)
+
+# and retrieve a 'QVAPOR' variable \\提取 'QVAPOR' 变量
+data = nc_file.variables['QVAPOR']
+
+# after converting the variable data to a list \\把变量数据转成 list
+dataVapor = data[:].tolist()
+
+# using `json.dumps()` to convert it to a JSON-formatted string, \\使用 `json.dumps()` 把这个list转成一个 JSON格式的 string
+json_data = json.dumps(dataVapor)
+```
+<img width="750" alt="Screen Shot 2023-05-25 at 11 44 52" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/c4aa7554-f673-4f6b-837d-acdd60d49a7b">
 
 ## 4.Data Processing 数据处理：
 处理 提取出的数据
