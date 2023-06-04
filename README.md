@@ -316,6 +316,63 @@ print(json_data)
 ```
 <img width="750" alt="Screen Shot 2023-05-25 at 11 44 52" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/c4aa7554-f673-4f6b-837d-acdd60d49a7b">
 
+### 2023-06-02 更新
+- ① 
+``` python
+pip install pandas
+```
+<img width="750" alt="Screen Shot 2023-06-04 at 11 01 30" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/f6d9d785-bd5f-413d-8de7-7b0913e7eb2f">
+
+a lib in python for data manipulation and analysis it provides data structures and functions that make it easier to work with structured data such as 
+CSV 文件，
+Excel 电子表格，
+SQL 数据库，
+
+- ②
+``` python
+pip install matplotlib
+```
+<img width="750" alt="Screen Shot 2023-06-04 at 11 16 36" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/f288a6ef-bfde-4b46-b517-81b6ebefec7e">
+
+matplotlib is a data visualization lib in Python. It provides wide range of functions and classes for creating static, animated, and interactive visualizations in various formats.
+
+installation 安装
+``` python
+pip install matplotlib
+```
+import 导入
+``` python
+import matplotlib.pyplot as plt
+```
+2 main interfaces for creating plots: 
+
+1.the MATLAB-style:
+``` python
+import matplotlib.pyplot as plt
+
+# Data for the x-axis and y-axis
+x = [1, 2, 3, 4, 5]
+y = [2, 4. 6, 8, 10]
+
+# Create a line plot
+plt.plot(x, y)
+
+# Add labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Line Plot')
+
+# show the plot
+plt.show()
+```
+
+2.the object-oriented interface: create a Figure object and then add Axes objects
+``` python
+
+```
+
+
+
 ## 4.Data Processing 数据处理：
 处理 提取出的数据
 
