@@ -368,8 +368,28 @@ plt.show()
 
 2.the object-oriented interface: create a Figure object and then add Axes objects
 ``` python
+import matplotlib.pyplot as plt
 
+# Data for the x-axis and y-axis
+x = [1, 2, 3, 4, 5]
+y = [2, 4. 6, 8, 10]
+
+# create a Figure object and then add Axes objects
+fig, ax = plt.subplots()
+
+# plot the data
+ax.plot(x, y)
+
+# Add labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.set_title('Line Plot')
+
+# show the plot
+plt.show()
 ```
+
+
 
 
 
