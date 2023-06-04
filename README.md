@@ -389,10 +389,6 @@ plt.set_title('Line Plot')
 plt.show()
 ```
 
-
-
-
-
 ## 4.Data Processing 数据处理：
 处理 提取出的数据
 
