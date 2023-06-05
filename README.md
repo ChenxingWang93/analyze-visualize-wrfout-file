@@ -390,6 +390,24 @@ plt.show()
 ```
 Matplotlib offers many other types of plots, including bar plots, scatter plots, histograms, pie charts, and more. extensive customization options for colors, markers, line styles, legends and annotations, [Matplotlib documentation](https://matplotlib.org/stable/contents.html)
 
+从 4 维数组 `dataVapor` 创建一系列图像
+
+通过迭代 一个范围 内的值 &通过 `imshow` & `savefig`函数 保存每张图片来实现
+
+⬇️ 保存多个图像 来实现
+
+``` Python
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+for i in range(0, 71): # `0` to `70`(71 iterations)
+    ax.imshow(dataVapor[0, i, :, :]) # display a single image from `dataVapor` on the axes
+    plt.savefig('dataVapor' + str(i) + '.png') # `savefig()` 函数 保存 figure as a PNG file
+    ax.clear() # 清理 axes for the next iteration
+plt.close(fig) # 关闭 the figure once all images are saved
+```
+
 
 ### 2023-06-05 更新
 
