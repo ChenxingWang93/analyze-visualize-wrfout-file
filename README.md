@@ -396,9 +396,17 @@ Matplotlib offers many other types of plots, including bar plots, scatter plots,
 def print_array_to_file(arr, dataVapor):
     with open('dataVapor.csv', 'w') as file
         for i in range(arr.shape[0]):
+            file.write('[')
             for j in range(arr.shape[1]):
+                file.write('[')
                 for k in range(arr.shape[2]):
+                    file.write('[')
                     for l in range(arr.shape[3]):
+                        file.write(str(arr[i, j, k, l]) + ',')
+                    file.write(']' + '\n')
+                file.write(']' + '\n')
+            file.write(']' + '\n')
+        file.write(']' + '\n')
 ```
 
 #### line 46
