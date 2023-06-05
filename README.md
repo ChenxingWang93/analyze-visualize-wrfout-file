@@ -392,6 +392,11 @@ Matplotlib offers many other types of plots, including bar plots, scatter plots,
 
 ### 2023-06-05 更新
 
+``` 
+brew install subversion
+```
+<img width="750" alt="Screen Shot 2023-06-05 at 10 01 09" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/1e7933eb-5672-41a5-886b-e9dc3be15179">
+
 
 ## 4.Data Processing 数据处理：
 处理 提取出的数据
