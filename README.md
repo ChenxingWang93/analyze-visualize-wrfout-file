@@ -392,6 +392,8 @@ Matplotlib offers many other types of plots, including bar plots, scatter plots,
 
 #### line 14 
 
+write the contents of a 4-dimensional array (`arr`) to a CSV file specified by the `filename` parameter
+
 ``` Python
 def print_array_to_file(arr, dataVapor):
     with open('dataVapor.csv', 'w') as file
