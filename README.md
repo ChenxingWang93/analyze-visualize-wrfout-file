@@ -390,6 +390,19 @@ plt.show()
 ```
 Matplotlib offers many other types of plots, including bar plots, scatter plots, histograms, pie charts, and more. extensive customization options for colors, markers, line styles, legends and annotations, [Matplotlib documentation](https://matplotlib.org/stable/contents.html)
 
+#### line 14 
+
+``` Python
+def print_array_to_file(arr, dataVapor):
+    with open('dataVapor.csv', 'w') as file
+        for i in range(arr.shape[0]):
+            for j in range(arr.shape[1]):
+                for k in range(arr.shape[2]):
+                    for l in range(arr.shape[3]):
+```
+
+#### line 46
+
 从 4 维数组 `dataVapor` 创建一系列图像
 
 通过迭代 一个范围 内的值 &通过 `imshow` & `savefig`函数 保存每张图片来实现
@@ -403,9 +416,9 @@ fig, ax = plt.subplots()
 
 for i in range(0, 71): # `0` to `70`(71 iterations)
     ax.imshow(dataVapor[0, i, :, :]) # display a single image from `dataVapor` on the axes
-    plt.savefig('dataVapor' + str(i) + '.png') # `savefig()` 函数 保存 figure as a PNG file
-    ax.clear() # 清理 axes for the next iteration
-plt.close(fig) # 关闭 the figure once all images are saved
+    plt.savefig('dataVapor' + str(i) + '.png') # `savefig()` function save figure as a PNG file
+    ax.clear() # clear axes for the next iteration
+plt.close(fig) # close the figure once all images are saved
 ```
 
 
