@@ -468,3 +468,17 @@ CSS 风格化
 跨设备
 
 # Result 🎬 结果
+
+# How to contribute 如何贡献？
+if you are interested in joining research &development, please fork the repo and submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) with your changes.
+
+如果你有兴趣加入研发过程，请 fork 仓库或者提交拉取请求
+
+# License
+to be determined 
+
+# Copyright 版权©️
+2023 Nan Xia, Hongxiong Xu, Chenxing Wang and others
+other individual files related to copyright attribution await further designation
+
+# Contact 联系
