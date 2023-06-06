@@ -474,7 +474,7 @@ if you are interested in joining research &development, please fork the repo and
 
 如果你有兴趣加入研发过程，请 fork 仓库或者提交拉取请求
 
-如果
+如果觉得这个仓库有用，记得点亮小🌟🌟🌟
 
 # License
 to be determined 
