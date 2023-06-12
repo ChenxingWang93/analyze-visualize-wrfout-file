@@ -1,4 +1,6 @@
 # analyze-visualize-wrfout-file
+# Result 🎬 结果
+![output_test](https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/81ba5b80-406a-4455-9dad-b0eb2b155d35)
 
 ## Introduction🗣️简介
 ### 📌definition and the scope of this research **该研究所瞄准的领域 以及 定义**
@@ -467,8 +469,6 @@ CSS 风格化
 跨浏览器
 
 跨设备
-
-# Result 🎬 结果
 
 # How to contribute 如何贡献？
 if you are interested in joining research &development, please fork the repo and submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) with your changes.
