@@ -2,6 +2,20 @@
 # Result 🎬 结果
 ![output_test](https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/81ba5b80-406a-4455-9dad-b0eb2b155d35)
 
+### 2023-06-12 更新
+⬆️保存绘图结果的一段 code snippet
+
+``` Python
+from celluloid import Camera
+fig, ax = plt.subplots()
+camera = Camera(fig)
+for i in range(0, dataVapor.shape[1]):  # `[1]` index 对应 size or length of the second dimension(axis 1) of the array
+    ax.imshow(dataVapor[0, i, :, :])    # display a single image from `dataVapor` on the axes
+    camera.snap()
+animation = camera.animate()
+animation.save("output_test.gif")
+```
+
 ## Introduction🗣️简介
 ### 📌definition and the scope of this research **该研究所瞄准的领域 以及 定义**
 `wrfout` 文件是由 **天气研究与预测(WRF) Weather Research and Forecasting** 模型生成的 输出文件
@@ -441,7 +455,26 @@ brew install subversion
 <img width="750" alt="Screen Shot 2023-06-05 at 10 01 09" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/1e7933eb-5672-41a5-886b-e9dc3be15179">
 
 ### 2023-06-06 更新
+~~一些失败的绘图尝试 some failure tryouts~~
+``` Python
+from PIL import Image
+import glob
 
+# Collect all PNG image file names
+image_files = glob.glob("*.png")
+
+# Create a list to store the frames
+frames = []
+
+# Open and append each image to the frames list
+for image_file in image_files:
+    image = Image.open(image_file)
+    frames.append(image)
+
+# Save the frames as a GIF file
+frames[0].save("output.gif", save_all=True, append_images=frames[1:], optimize=False, duration=200, loop=0)
+```
+生成的是乱序图像
 
 ## 4.Data Processing 数据处理：
 处理 提取出的数据
