@@ -1,5 +1,23 @@
 # analyze-visualize-wrfout-file
 # Result 🎬 结果
+### 2023-06-19 更新
+``` Python
+from mayavi import mlab
+
+dataVapor = dataVapor[:, :, :]
+source = mlab.pipeline.scalar_field(dataVapor)
+
+for axis in ['x', 'z']:
+    plane = mlab.pipeline.image_plane_widget(source,
+                                    plane_orientation='{}_axes'.format(axis),
+                                    slice_index = 40,colormap='Blues')
+    # Flip colormap. Better way to do this? 翻转颜色贴图
+    plane.module_manager.scalar_lut_manager.reverse_lut = True
+mlab.outline()
+mlab.show()
+```
+
+
 ![output_test](https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/81ba5b80-406a-4455-9dad-b0eb2b155d35)
 
 ### 2023-06-12 更新
