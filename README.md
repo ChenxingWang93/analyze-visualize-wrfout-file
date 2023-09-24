@@ -1,12 +1,19 @@
 # analyze-visualize-wrfout-file
 # Result 🎬 结果
 ### 2023-06-19 更新
-3 维科学数据可视化与绘图: [Mayavi](https://docs.enthought.com/mayavi/mayavi/)
+本项目中最主要的 3 个依赖：
+Matplotlib 是一个 全方位库 用于在 python 中创建 静态、动态、与交互式的可视化[Matplotlib](https://matplotlib.org/);
+
+netCDF C 库的 Python 界面[netCDF4](https://unidata.github.io/netcdf4-python/);
+
+3 维科学数据可视化与绘图: [Mayavi](https://docs.enthought.com/mayavi/mayavi/);
 
 在 terminal 中
+
 ```
 pip install mayavi
 ```
+
 
 ``` Python
 from mayavi import mlab
