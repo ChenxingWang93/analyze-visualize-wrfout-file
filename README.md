@@ -2,6 +2,8 @@
 # Result 🎬 结果
 ### 2023-06-19 更新
 本项目中最主要的 3 个依赖：
+Matplotlib\ netCDF4\ Mayavi
+
 Matplotlib 是一个 全方位库 用于在 python 中创建 静态、动态、与交互式的可视化[Matplotlib](https://matplotlib.org/);
 - 在 terminal 中
 ```
@@ -26,7 +28,6 @@ pip install mayavi
 - <img width="1000" alt="Screenshot 2023-09-24 at 22 57 18" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/11b0b2a1-cdd1-4c27-82e0-734c5e3806e5"> 
 
 
-
 ``` Python
 from mayavi import mlab
 
@@ -42,6 +43,8 @@ for axis in ['x', 'z']:
 mlab.outline()
 mlab.show()
 ```
+
+
 
 
 ![output_test](https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/81ba5b80-406a-4455-9dad-b0eb2b155d35)
