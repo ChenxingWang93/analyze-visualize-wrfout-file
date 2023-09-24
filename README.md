@@ -1,6 +1,6 @@
 # analyze-visualize-wrfout-file
 # Result 🎬 结果
-### 2023-06-19 更新
+### 2023-09-24 更新
 本项目中最最最⚠️⚠️⚠️主要的 3 个依赖：
 Matplotlib\ netCDF4\ Mayavi
 
@@ -43,11 +43,11 @@ for axis in ['x', 'z']:
 mlab.outline()
 mlab.show()
 ```
+结果展示：
+
+https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/6673ecef-3851-47f1-bd6a-d8756a109d7d
 
 
-
-
-![output_test](https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/81ba5b80-406a-4455-9dad-b0eb2b155d35)
 
 ### 2023-06-12 更新
 ⬆️保存绘图结果的一段 code snippet
@@ -62,6 +62,7 @@ for i in range(0, dataVapor.shape[1]):  # `[1]` index 对应 size or length of t
 animation = camera.animate()
 animation.save("output_test.gif")
 ```
+![output_test](https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/81ba5b80-406a-4455-9dad-b0eb2b155d35)
 
 ## Introduction🗣️简介
 ### 📌definition and the scope of this research **该研究所瞄准的领域 以及 定义**
