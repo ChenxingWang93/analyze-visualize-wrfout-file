@@ -1,6 +1,13 @@
 # analyze-visualize-wrfout-file
 # Result 🎬 结果
 ### 2023-06-19 更新
+3 维科学数据可视化与绘图: [Mayavi](https://docs.enthought.com/mayavi/mayavi/)
+
+在 terminal 中
+```
+pip install mayavi
+```
+
 ``` Python
 from mayavi import mlab
 
