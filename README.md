@@ -3,16 +3,28 @@
 ### 2023-06-19 更新
 本项目中最主要的 3 个依赖：
 Matplotlib 是一个 全方位库 用于在 python 中创建 静态、动态、与交互式的可视化[Matplotlib](https://matplotlib.org/);
+- 在 terminal 中
+```
+pip install matplotlib
+```
+- <img width="1000" alt="Screenshot 2023-09-24 at 22 57 18" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/db305b8d-4917-4184-ba26-69e10b46ff38">
+
 
 netCDF C 库的 Python 界面[netCDF4](https://unidata.github.io/netcdf4-python/);
+- 在 terminal 中
+```
+pip install netCDF4
+```
+- <img width="1000" alt="Screenshot 2023-09-24 at 23 11 17" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/f00a03c2-555d-4817-95ae-116072aa68b3">
+
 
 3 维科学数据可视化与绘图: [Mayavi](https://docs.enthought.com/mayavi/mayavi/);
-
-在 terminal 中
-
+- 在 terminal 中
 ```
 pip install mayavi
 ```
+- <img width="1000" alt="Screenshot 2023-09-24 at 22 57 18" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/11b0b2a1-cdd1-4c27-82e0-734c5e3806e5"> 
+
 
 
 ``` Python
