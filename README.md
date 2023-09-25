@@ -4,7 +4,7 @@
 本项目中最最最⚠️⚠️⚠️主要的 3 个依赖：
 Matplotlib\ netCDF4\ Mayavi
 
-Matplotlib 是一个 全方位库 用于在 python 中创建 静态、动态、与交互式的可视化[Matplotlib](https://matplotlib.org/);
+Matplotlib 是一个 全方位库 用于在 python 中创建 静态、动态、与交互式的可视化: [Matplotlib](https://matplotlib.org/);
 - 在 terminal 中
 ```
 pip install matplotlib
@@ -12,7 +12,7 @@ pip install matplotlib
 - <img width="1000" alt="Screenshot 2023-09-24 at 22 57 18" src="https://github.com/ChenxingWang93/analyze-visualize-wrfout-file/assets/31954987/db305b8d-4917-4184-ba26-69e10b46ff38">
 
 
-netCDF C 库的 Python 界面[netCDF4](https://unidata.github.io/netcdf4-python/);
+netCDF C 库的 Python 界面: [netCDF4](https://unidata.github.io/netcdf4-python/);
 - 在 terminal 中
 ```
 pip install netCDF4
