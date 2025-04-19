@@ -268,25 +268,6 @@ rootgrp.close()
 ## 1.File Conversion文件📃转换：
 转化为通用格式 **网络通用数据表NetCDF (Network Common Data Form)** 
 
-## 2.Web Framework 框架选择：
-- [Leaflet](https://github.com/Leaflet/Leaflet): 一个 JavaScript 库的交互式地图🗺️  🔗  [leafletjs](https://leafletjs.com/)
-- [OpenLayers](https://github.com/openlayers/openlayers): 另一个 JavaScript 库用来展示地图🗺️与地理空间数据  🔗  [openlayers](https://openlayers.org/)
-- [Cesium](https://github.com/CesiumGS/cesium): 基于WebGL 的 JavaScript 库 渲染 3D 全球与地图🗺️ 🔗  [CesiumGS](https://cesium.com/platform/cesiumjs/)
-  - 1.installation &setup: 安装与设置
-  - 
-  - 2.displaying a basic map: 展示基础地图
-  - 
-  - 3.adding entities and data: 添加实体与数据
-  - 
-  - 4.loading & visualizing geospatial data: 加载与可视化地理空间数据
-  - 
-  - 5.interactivity and user interaction: 交互性与互动
-  - 
-  - 6.CesiumJS extensions: CesiumJS 插件
-  - 
-- [D3.js](https://github.com/d3/d3): 动态交互式数据可视化 🔗  [d3js](https://d3js.org/)
-
-
 ## 3.Data Extraction 数据提取：
 ### 2023-05-23 更新
 ~~删除的文字内容~~
@@ -536,23 +517,6 @@ frames[0].save("output.gif", save_all=True, append_images=frames[1:], optimize=F
 
 ## 5.Visualization 可视化：
 在地图上基于时间序列绘制数据 plot the data on a map, generate time series plots
-
-## 6.Web integration 植入：
-嵌入 HTML 结构
-
-CSS 风格化
-
-## 7.Hosting 托管：
-部署到网络服务器或者托管平台
-
-确保必要的依赖(JavaScript libraries) wrfout 文件能够通过网页应用程序被访问
-
-## 8.Testing 测试：
-保证兼容性 
-
-跨浏览器
-
-跨设备
 
 # How to contribute 如何贡献？
 if you are interested in joining research &development, please fork the repo and submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) with your changes.
